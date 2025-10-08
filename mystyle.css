@@ -1,0 +1,262 @@
+body {
+  font-family: "Segoe UI", "Arial", sans-serif;
+  color: #ffffff;
+  background-color: #A9A9A9;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+h2, h3 {
+  font-family: "Georgia", serif;
+  color: #fff;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+p {
+  text-align: justify;
+  font-size: 1em;
+  color: #FFFFFF;
+}
+.hero{
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;       
+  height: 100Vh; 
+
+}
+.hero img {
+  width: 40%;         
+  max-width: 450px;   
+  height: auto;       
+  border-radius: 10px;
+}
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #A9A9A9;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.9);
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-size: 1.4em;
+  color: #FFFFFF;
+}
+
+.card p {
+  padding: 0.5em 0;
+}
+
+.card a {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.card a:hover {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.placeholder {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.placeholder:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+figure {
+  margin: 0;
+}
+
+button:hover,
+a.button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, 0.6);
+}
+
+.media-row {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.video-card, .audio-card {
+  background-color: #C0C0C0;
+  color: #ccc;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+video, audio {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #A9A9A9;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+form h1 {
+  color: #FFFFFF;
+  text-align: center;
+}
+
+form label {
+  display: block;
+  margin: 15px 0 5px;
+  color: #fff;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 1em;
+  background-color: #FFFFFF;
+  color: #000;
+  border: none;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border: 2px solid #00BFFF;
+  background-color: #fff;
+}
+
+form button {
+  background-color: #000000;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+form button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+  z-index: 1000;
+}
+nav ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: none;
+  color: grey;
+}
+
+
+body {
+  margin-top: 80px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  
+
+  .media-row {
+    grid-template-columns: 1fr;
+  }
+
+  .placeholder {
+    height: 200px;
+  }
+

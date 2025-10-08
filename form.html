@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="mystyle.css">
+<title>Contact Us</title>
+</head>
+<body>
+
+<nav>
+<ol>
+<li><a href="Introduction.html">Home page</a></li>
+<li><a href="traditionalclothing.html">Traditional Clothing page</a></li>
+<li><a href="music.html">Music & Dance page</a></li>
+<li><a href="craft.html">Craft & Arts page</a></li>
+<li><a href="form.html">Feedback page</a></li>
+</ol>
+</nav>
+
+
+<div class="form-container">
+<form>
+<h1>Contact Us</h1>
+<label for="name">Name</label>
+<input type="text" id="name" name="name" placeholder="Write your full names:" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" placeholder="Input your email:" required>
+
+<h2>Select topic of your interest</h2>
+<label><input type="radio" name="topic" value="traditional"> Traditional Clothing</label>
+<label><input type="radio" name="topic" value="music"> Music & Dance</label>
+<label><input type="radio" name="topic" value="craft"> Craft & Art</label>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" placeholder="Please write your message here..." required></textarea>
+
+<button type="submit">Submit</button>
+</form>
+</div>
+
+</body>
+</html>
